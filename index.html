@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<head>
+  <title>FanaNapkin</title>
+  <link rel = "stylesheet"
+    type = "text/css"
+    href = "FanaNapkin.css" />
+    <link rel = "shortcut icon"
+        href = "LogoMakr_59OZWe.png" />
+</head>
+
+<body>
+  <div class="header">
+  <img class="LOGO" src="LogoMakr_9XsuuT.png">
+  <div class="topnav" role="navigation">
+  <a href="FanaNapkinOrder.html">Order</a>
+  <a href="FanaNapkinOptions.html">Options</a>
+  <a href="FanaNapkinAbout.html">About</a>
+  <a href="index.html">Home</a>
+  </div>
+</div>
+  <div class="main" class="hero" role="banner">
+    <img src="HERO.jpg" width="100%">
+  </div>
+  <div class="main" role="main">
+    <p>
+      Welcome to FanaNapkin, the one stop shop for all your napkins-with-faces needs! We make custom napkins with whatever portraits you could ever want. We do selfies, friends, family, disowned cousins, celebrities, presidents, obsessive crushes and anybody else you can sneak a photo of. To get a quote for your choice of photo, contact us through the order form. We are excited to get into touch with you! [A note from the creator out of charecter: I did not have time to photoshop faces onto all the napkins. Just pretend that they all have faces. Or don't. I can't tell you what to do.]
+    </p>
+    <p>
+      Here at FanaNapkin, we have made a commitment to using the highest quality materials. We offer a wide variety of fabrics, patterns and colors. Plus, all of the napkins are fully custom made with your choice of face. To see the full list of materials and styles, visit our options gallery. If you are not quite sure what you want yet, take a look at the gallery on the about page for some inspiration. We have the perfect face-napkin for you!
+  </div>
+    <div class="main" class="gallery" role="complementary">
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img src="napkina.jpg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="napkinb.jpg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="napkinc.jpg" style="width:100%">
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+        <br>
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" on", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " on";
+      }
+    </script>
+  </div>
+    <br>
+  <div role="complementary" class="Call">
+      <h3>Seen enough? Ready for more?</h3>
+    <a href="FanaNapkinOrder.html"> Order today!</a>
+  </div>
+    <br>
+  <div class="Copy" role="contentinfo">
+    <p>2019 FanaNapkin. All rights reserved. | Logo created with LogoMakr.com | Made by Julia Hoffman</p>
+  </div>
+</body>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<head>
+  <title>About | FanaNapkin</title>
+  <link rel = "stylesheet"
+    type = "text/css"
+    href = "FanaNapkin.css" />
+  <link rel = "shortcut icon"
+        href = "LogoMakr_59OZWe.png" />
+</head>
+
+<body>
+  <div class="header">
+  <img class="LOGO" src="LogoMakr_9XsuuT.png">
+  <div class="topnav" role="navigation">
+  <a href="FanaNapkinOrder.html">Order</a>
+  <a href="FanaNapkinOptions.html">Options</a>
+  <a href="FanaNapkinAbout.html">About</a>
+  <a href="index.html">Home</a>
+  </div>
+    </div>
+  <div class="main" role="main">
+    <p>
+      FanaNapkin has been proudly making face-napkins since its inception in late 1993. We were founded by Talia Colombo after she realized she had no easy way to get napkins with faces. Realizing the oppertunity to fill a need in the market, Talia began creating custom napkins from her garage. Her business soon outgrew said garage, so she began opening several outposts. Eventually, in 2009, FanaNapkin transitioned to a fully online boutique. We have since expanded to all 50 states and 23 countries. We are very proud to contiune to be the sole provider for face-napkins in North America and Europe.
+    </p>
+    <p>
+      FanaNapkin sources all its materials in completely sustainable methods. We have always commited ourselves to providing the highest quality products, and we believe that quality starts with the starting materials. We pride ourselves on our high thread count cloth, our thick paper and our long lasting inks. Our materials are also all sustainable and completly fair trade certified. We hope you will take as much pride in our products as we do.
+    </p>
+  </div>
+  <div class="row1">
+  <div class="column1">
+    <img src="napkind.jpg" alt="Nature" onclick="myFunction(this)" onload="myFunction(this)";>
+  </div>
+  <div class="column1">
+    <img src="napkine.jpg" alt="Snow" onclick="myFunction(this);">
+  </div>
+  <div class="column1">
+    <img src="napkinf.jpg" alt="Mountains" onclick="myFunction(this);">
+  </div>
+  <div class="column1">
+    <img src="napking.jpg" alt="Lights" onclick="myFunction(this);">
+  </div>
+</div>
+
+<!-- The expanding image container -->
+<div class="container1">
+  <!-- Close the image -->
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+  <!-- Expanded image -->
+  <img id="expandedImg" style="width:100%; height:auto;">
+
+  <!-- Image text -->
+</div>
+    <script>
+    function myFunction(imgs) {
+  // Get the expanded image
+  var expandImg = document.getElementById("expandedImg");
+  // Get the image text);
+  // Use the same src in the expanded image as the image being clicked on from the grid
+  expandImg.src = imgs.src;
+  // Show the container element (hidden with CSS)
+  expandImg.parentElement.style.display = "block";
+}</script>
+    <br>
+  <div class="Copy" role="contentinfo">
+    <p>2019 FanaNapkin. All rights reserved. | Logo created with LogoMakr.com | Made by Julia Hoffman</p>
+  </div>
+</body>
